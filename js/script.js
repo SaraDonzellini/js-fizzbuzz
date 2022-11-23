@@ -2,24 +2,29 @@
 
 for (let i = 0; i <= 100; i++) {
   
+let fizz = document.getElementById("fizz")
+let buzz = document.getElementById("buzz")
+let fizzBuzz = document.getElementById("fizzbuzz")
+let numbers = document.getElementById("numbers")
   
   if (i % 15 === 0){
     //* Per i numeri che sono sia multipli di 3 che di 5 stampi “FizzBuzz”
-
-  console.log("FizzBuzz")
+    fizzBuzz.append("FizzBuzz! ")
+    console.log("FizzBuzz")
 
   } else if (i % 3 === 0) {
-    //* per i multipli di 3 stampi “Fizz”
-
-    console.log("Fizz")    
+      //* per i multipli di 3 stampi “Fizz”
+      fizz.append("Fizz! ")
+      console.log("Fizz")    
 
     } else if (i % 5 === 0) {
-      //* per i multipli di 5 stampi “Buzz”
+        //* per i multipli di 5 stampi “Buzz”
+        buzz.append("Buzz! ")
+        console.log("Buzz")  
 
-      console.log("Buzz")  
       } else 
-      
-      console.log(i)
+          numbers.append(i + "! ")
+          console.log(i)
 
 
 }
